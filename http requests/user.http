@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"Mable.Bergstrom@yahoo.com",
+    "password":"dasdasdasdsdasd"
+}
+
+# GET http://localhost:3000/api/colors HTTP/1.1
+# content-type: application/json
+
+# GET http://localhost:3000/api/colors/61facb9880fa318038860caf HTTP/1.1
+# content-type: application/json
+
+# PUT http://localhost:3000/api/colors/61fc0940ebcf234d71f58a2d HTTP/1.1                  
+# content-type: application/json
+
+# {
+#     "name": "Gray"
+# }
+
+# Delete http://localhost:3000/api/colors/61facb9880fa318038860caf HTTP/1.1                  
+# content-type: application/json

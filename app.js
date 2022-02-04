@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 const errorHandler = require("errorhandler");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var colorRouter = require("./routes/colors");
 require("./config/database");
 require("./models/Users");
 require("./config/passport");
@@ -35,7 +36,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use(require('./routes'));
+app.use("/colors", colorRouter);
+app.use(require("./routes"));
 app.use(
   session({
     secret: "passport-tutorial",
